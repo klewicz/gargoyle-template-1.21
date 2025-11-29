@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "gargoyle",
+	"version": "${version}",
+	"name": "Gargoyle",
+	"description": "Gargoyle tutorial mod",
+	"authors": [
+		"Lewiczzz"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/gargoyle/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.lewiczzz.gargoyle.Gargoyle"
+		],
+		"fabric-datagen": [
+			"com.lewiczzz.gargoyle.GargoyleDataGenerator"
+		],
+      "client": [
+        "com.lewiczzz.gargoyle.TutorialModClient"
+      ]
+	},
+	"mixins": [
+		"gargoyle.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
